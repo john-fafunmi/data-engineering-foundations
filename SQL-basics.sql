@@ -49,6 +49,15 @@ SELECT building, SUM(years_employed) AS total_years_employed
 FROM employees
 GROUP BY building;
 
+-- Lesson 11: A short note on aggregates pt 2
+
+-- Exercise 1
+SELECT role, COUNT(role) as total_artists
+FROM employees
+WHERE employees.role like "art%"
+GROUP BY role
+
+
 
 
 
