@@ -21,11 +21,13 @@ SELECT movies.title, (boxoffice.domestic_sales + boxoffice.international_sales) 
 FROM movies
 INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id;
+
 -- Exercise 2
 SELECT movies.title, (boxoffice.rating*10) AS rating_percentage
 FROM movies
 INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id;
+
 -- Exercise 3
 SELECT movies.title, movies.year
 FROM movies
@@ -52,10 +54,18 @@ GROUP BY building;
 -- Lesson 11: A short note on aggregates pt 2
 
 -- Exercise 1
-SELECT role, COUNT(role) as total_artists
+SELECT employees.role, COUNT(employees.role) as total_artists
 FROM employees
 WHERE employees.role like "art%"
-GROUP BY role
+GROUP BY role;
+
+-- Exercise 2
+SELECT employees.role, COUNT(employees.role) as total_employees
+FROM employees
+GROUP BY role;
+
+
+
 
 
 
