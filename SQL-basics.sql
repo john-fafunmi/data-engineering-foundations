@@ -1,12 +1,15 @@
-Lesson 8: Exercise 1
-SELECT * 
+-- Lesson 8: A short note on NULLs
+
+-- Exercise 1
+SELECT *
 FROM employees
 LEFT JOIN buildings
     ON building_name = building
-WHERE building IS NULL
-Lesson 8: Exercise 2
-SELECT * 
+WHERE building IS NULL;
+
+-- Exercise 2
+SELECT *
 FROM buildings
 LEFT JOIN employees
     ON building_name = building
-WHERE building IS NULL
+WHERE building IS NULL;
