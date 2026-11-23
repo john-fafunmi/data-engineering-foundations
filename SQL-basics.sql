@@ -32,3 +32,8 @@ FROM movies
 INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id
 WHERE movies.year % 2 = 0;
+
+-- Lesson 10: a short note on aggregates
+
+
+
