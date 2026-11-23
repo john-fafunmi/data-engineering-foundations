@@ -38,6 +38,8 @@ WHERE movies.year % 2 = 0;
 -- Exercise 1
 SELECT MAX(years_employed)
 FROM employees
+-- Exercise 2
+
 
 
 
