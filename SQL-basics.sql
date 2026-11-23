@@ -73,17 +73,17 @@ GROUP BY role;
 -- Lesson 12: 
 
 -- Exercise 1
-SELECT movies.director, COUNT(movies.director) as total_movies_directed 
+SELECT movies.director, COUNT(*) AS total_movies_directed
 FROM movies
 GROUP BY movies.director
 ORDER BY total_movies_directed DESC;
 
 -- Exercise 2
-SELECT director, SUM(domestic_sales) + SUM(international_sales) as total_sales
+SELECT movies.director, SUM(boxoffice.domestic_sales) + SUM(boxoffice.international_sales) AS total_sales
 FROM movies
-JOIN boxoffice
+INNER JOIN boxoffice
     ON boxoffice.movie_id = movies.id
-GROUP BY director
+GROUP BY movies.director
 ORDER BY total_sales DESC;
 
 
