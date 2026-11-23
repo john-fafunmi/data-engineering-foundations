@@ -35,5 +35,11 @@ WHERE movies.year % 2 = 0;
 
 -- Lesson 10: a short note on aggregates
 
+-- Exercise 1
+SELECT MAX(years_employed)
+FROM employees
+
+
+
 
 
