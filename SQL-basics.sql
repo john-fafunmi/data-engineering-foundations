@@ -70,6 +70,15 @@ FROM employees
 WHERE role LIKE 'Eng%'
 GROUP BY role;
 
+-- Lesson 12: 
+
+-- Exercise 1
+SELECT movies.director, COUNT(movies.director) as total_movies_directed 
+FROM movies
+GROUP BY movies.director
+ORDER BY total_movies_directed DESC;
+
+
 
 
 
