@@ -64,6 +64,13 @@ SELECT employees.role, COUNT(employees.role) as total_employees
 FROM employees
 GROUP BY role;
 
+-- Exercise 3
+SELECT employees.role, SUM(years_employed) as total_engineers
+FROM employees
+WHERE employees.role like "Eng%"
+
+
+
 
 
 
