@@ -27,3 +27,8 @@ FROM movies
 INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id;
 -- Exercise 3
+SELECT movies.title, movies.year
+FROM movies
+INNER JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+WHERE movies.year % 2 = 0;
