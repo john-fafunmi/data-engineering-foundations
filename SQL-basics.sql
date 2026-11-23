@@ -33,19 +33,21 @@ INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id
 WHERE movies.year % 2 = 0;
 
--- Lesson 10: a short note on aggregates
+-- Lesson 10: A short note on aggregates
 
 -- Exercise 1
 SELECT MAX(years_employed)
-FROM employees
+FROM employees;
+
 -- Exercise 2
-SELECT role, AVG(years_employed) as average_years
+SELECT role, AVG(years_employed) AS average_years
 FROM employees
-GROUP BY role
+GROUP BY role;
+
 -- Exercise 3
-SELECT employees.building, SUM(years_employed) as total_number_employees
+SELECT building, SUM(years_employed) AS total_years_employed
 FROM employees
-GROUP by employees.building
+GROUP BY building;
 
 
 
