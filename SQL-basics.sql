@@ -42,6 +42,9 @@ FROM employees
 SELECT role, AVG(years_employed) as average_years
 FROM employees
 GROUP BY role
+-- Exercise 3
+
+
 
 
 
