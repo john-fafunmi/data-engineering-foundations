@@ -22,3 +22,8 @@ FROM movies
 INNER JOIN boxoffice
     ON movies.id = boxoffice.movie_id;
 -- Exercise 2
+SELECT movies.title, (boxoffice.rating*10) AS rating_percentage
+FROM movies
+INNER JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+-- Exercise 3
