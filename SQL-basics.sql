@@ -12,4 +12,4 @@ SELECT *
 FROM buildings
 LEFT JOIN employees
     ON building_name = building
-WHERE building IS NULL;
+WHERE employees.role IS NULL;
