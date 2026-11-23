@@ -54,20 +54,22 @@ GROUP BY building;
 -- Lesson 11: A short note on aggregates pt 2
 
 -- Exercise 1
-SELECT employees.role, COUNT(employees.role) as total_artists
+SELECT role, COUNT(*) AS total_artists
 FROM employees
-WHERE employees.role like "art%"
+WHERE role LIKE 'art%'
 GROUP BY role;
 
 -- Exercise 2
-SELECT employees.role, COUNT(employees.role) as total_employees
+SELECT role, COUNT(*) AS total_employees
 FROM employees
 GROUP BY role;
 
 -- Exercise 3
-SELECT employees.role, SUM(years_employed) as total_engineers
+SELECT role, SUM(years_employed) AS total_engineer_years
 FROM employees
-WHERE employees.role like "Eng%";
+WHERE role LIKE 'Eng%'
+GROUP BY role;
+
 
 
 
