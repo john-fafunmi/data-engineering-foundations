@@ -39,6 +39,11 @@ WHERE movies.year % 2 = 0;
 SELECT MAX(years_employed)
 FROM employees
 -- Exercise 2
+SELECT role, AVG(years_employed) as average_years
+FROM employees
+GROUP BY role
+
+
 
 
 
