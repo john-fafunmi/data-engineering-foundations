@@ -13,3 +13,12 @@ FROM buildings
 LEFT JOIN employees
     ON building_name = building
 WHERE name IS NULL;
+
+-- Lesson 9: A short note on expressions
+
+-- Exercise 1
+SELECT movies.title, (boxoffice.domestic_sales + boxoffice.international_sales) / 1000000 AS combined_sales
+FROM movies
+INNER JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+-- Exercise 2
