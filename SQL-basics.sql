@@ -78,6 +78,15 @@ FROM movies
 GROUP BY movies.director
 ORDER BY total_movies_directed DESC;
 
+-- Exercise 2
+SELECT director, SUM(domestic_sales) + SUM(international_sales) as total_sales
+FROM movies
+JOIN boxoffice
+    ON boxoffice.movie_id = movies.id
+GROUP BY director
+ORDER BY total_sales DESC;
+
+
 
 
 
