@@ -43,6 +43,9 @@ SELECT role, AVG(years_employed) as average_years
 FROM employees
 GROUP BY role
 -- Exercise 3
+SELECT employees.building, SUM(years_employed) as total_number_employees
+FROM employees
+GROUP by employees.building
 
 
 
