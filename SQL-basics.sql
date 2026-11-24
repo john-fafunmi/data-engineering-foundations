@@ -108,6 +108,13 @@ UPDATE movies
 SET year = 1999
 WHERE id = 3;
 
+-- Exercise 3
+UPDATE movies
+SET title = 'Toy Story 3', 
+    director = 'Lee Unkrich'
+WHERE id = 11;
+
+
 
 
 
