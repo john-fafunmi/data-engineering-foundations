@@ -96,6 +96,13 @@ VALUES (4, "Toy Story 4", "El Directore", 2015, 90);
 INSERT INTO boxoffice 
 VALUES (4, 8.7, 340000000, 270000000);
 
+-- Lesson 14:
+
+-- Exercise 1
+UPDATE movies
+SET director = "John Lasseter"
+WHERE title = "A Bug's Life";
+
 
 
 
