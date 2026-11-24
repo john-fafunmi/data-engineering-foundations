@@ -103,6 +103,11 @@ UPDATE movies
 SET director = "John Lasseter"
 WHERE title = "A Bug's Life";
 
+-- Exercise 2
+UPDATE movies
+SET year = 1999
+WHERE id = 3;
+
 
 
 
