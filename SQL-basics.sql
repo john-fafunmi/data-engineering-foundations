@@ -139,6 +139,11 @@ CREATE TABLE database (
 ALTER TABLE movies
 ADD aspect_ratio FLOAT
 
+-- Exercise 2
+ALTER TABLE movies
+ADD language TEXT
+    DEFAULT 'English';
+
 
 
 
