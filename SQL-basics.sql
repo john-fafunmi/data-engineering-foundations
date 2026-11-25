@@ -144,6 +144,14 @@ ALTER TABLE movies
 ADD language TEXT
     DEFAULT 'English';
 
+-- Lesson 18: short note on dropping tables
+
+-- Exercise 1
+DROP TABLE movies;
+
+-- Exercise 2
+DROP TABLE boxoffice;
+
 
 
 
