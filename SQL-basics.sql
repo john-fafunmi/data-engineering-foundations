@@ -120,6 +120,10 @@ WHERE id = 11;
 DELETE FROM movies
 WHERE year < 2005;
 
+-- Exercise 2
+DELETE FROM movies
+WHERE director = 'Andrew Stanton';
+
 
 
 
