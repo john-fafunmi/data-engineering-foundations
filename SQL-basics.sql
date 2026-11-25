@@ -124,7 +124,7 @@ WHERE year < 2005;
 DELETE FROM movies
 WHERE director = 'Andrew Stanton';
 
--- Lesson 15: short note on creating tables
+-- Lesson 16: short note on creating tables
 
 -- Exercise 1
 CREATE TABLE database (
@@ -132,6 +132,12 @@ CREATE TABLE database (
     version FLOAT,
     download_count INTEGER
 );
+
+-- Lesson 17: short note on altering tables
+
+-- Exercise 1
+ALTER TABLE movies
+ADD aspect_ratio FLOAT
 
 
 
