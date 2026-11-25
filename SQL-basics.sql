@@ -86,7 +86,7 @@ INNER JOIN boxoffice
 GROUP BY movies.director
 ORDER BY total_sales DESC;
 
--- Lesson 13:
+-- Lesson 13: short note on inserts
 
 -- Exercise 1
 INSERT INTO movies 
@@ -96,7 +96,7 @@ VALUES (4, "Toy Story 4", "El Directore", 2015, 90);
 INSERT INTO boxoffice 
 VALUES (4, 8.7, 340000000, 270000000);
 
--- Lesson 14:
+-- Lesson 14: short note on updates
 
 -- Exercise 1
 UPDATE movies
@@ -113,6 +113,14 @@ UPDATE movies
 SET title = 'Toy Story 3', 
     director = 'Lee Unkrich'
 WHERE id = 11;
+
+-- Lesson 15: short note on deletes
+
+-- Exercise 1
+DELETE FROM movies
+WHERE year < 2005;
+
+
 
 
 
